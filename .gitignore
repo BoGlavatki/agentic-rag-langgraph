@@ -4,3 +4,25 @@
 
 # LangGraph
 .langgraph_api/
+.venv/
+
+
+# Python-Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenvs
+.venv/
+venv/
+.env/
+.env.*
+
+# Build/Packaging
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
