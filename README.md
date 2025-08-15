@@ -1,53 +1,54 @@
 # agentic-rag-langgraph
-This branch represents a hands‑on learning project to deepen my expertise in building an agentic RAG system with LangGraph—covering ingestion, retrieval, filtering, generation, web‑search integration, self‑refinement, and adaptive behavior.
+This branch is a hands-on learning project to deepen my expertise in building an agentic RAG system with LangGraph—covering ingestion, retrieval, filtering, generation, web-search integration, self-refinement, and adaptive behavior.
 
 ## Ice Breaker
-This application uses agents and a scraper—"Scrape Any Data"—to extract data from websites. Specifically, it is designed to find information about a person on LinkedIn and generate structured information about them.<img width="1050" height="988" alt="Bildschirmfoto 2025-08-14 um 00 00 32" src="https://github.com/user-attachments/assets/a73e94ca-8135-4b86-9c72-c24504a4b303" />
+This application uses agents and a scraper—"Scrape Any Data"—to extract data from websites. Specifically, it is designed to find information about a person on LinkedIn and generate structured information about them.
+<img width="1050" height="988" alt="Screenshot 2025-08-14 at 00 00 32" src="https://github.com/user-attachments/assets/a73e94ca-8135-4b86-9c72-c24504a4b303" />
 
 # ReAct AgentExecutor – From Scratch
 
-Dieser Branch implementiert Schritt für Schritt einen **ReAct AgentExecutor** mit LangChain, inklusive vollständigem Verständnis des ReAct-Algorithmus und moderner Best Practices.
+This branch implements a **ReAct AgentExecutor** step by step with LangChain, including a complete understanding of the ReAct algorithm and modern best practices.
 
-## 📌 Ziele
-- Aufbau eines ReAct-Agenten von Grund auf
-- Verständnis des ReAct-Algorithmus und seiner Komponenten
-- Implementierung und Integration eigener Tools
-- Nutzung von CallbackHandlers zur Steuerung des Agentenflusses
-- Vorbereitung auf den Wechsel zu modernem Tool Calling
+## 📌 Goals
+- Build a ReAct agent from scratch
+- Understand the ReAct algorithm and its components
+- Implement and integrate custom tools
+- Use CallbackHandlers to control agent flow
+- Prepare for transition to modern tool calling
 
-## 📂 Inhalte
+## 📂 Contents
 
 ### 1. Environment Setup & Algorithm Overview
-- Einrichtung der Entwicklungsumgebung
-- Überblick über den ReAct-Algorithmus und seine Kernprinzipien
+- Setting up the development environment
+- Overview of the ReAct algorithm and its core principles
 
 ### 2. Defining Tools
-- Erstellung eigener Tools für den Agenten
-- Schnittstellen für Tool-Integration
+- Creating custom tools for the agent
+- Interfaces for tool integration
 
 ### 3. Debugging
-- Lösen typischer Fehler:
-  - Stop Token Probleme
-  - Template Indentation Issues
+- Solving common errors:
+    - Stop token issues
+    - Template indentation issues
 
 ### 4. ReAct Prompt & Reasoning Engine
-- Erstellung des ReAct-Prompts
-- LLM Reasoning Engine implementieren
-- Output Parsing & Tool Execution
+- Creating the ReAct prompt
+- Implementing the LLM reasoning engine
+- Output parsing & tool execution
 
 ### 5. Agent Core Components
 - `AgentAction`
 - `AgentFinish`
-- Agent-Loop
+- Agent loop
 
 ### 6. CallbackHandlers
-- Nutzung zur Steuerung und Finalisierung des Agent-Loops
+- Using them to control and finalize the agent loop
 
 ### 7. Recap & LangSmith
-- Kurzes Recap der Implementierung
-- Monitoring und Debugging mit LangSmith
+- Brief recap of the implementation
+- Monitoring and debugging with LangSmith
 
-## 🛠 Technologien
+## 🛠 Technologies
 - Python 3.x
 - [LangChain](https://python.langchain.com/)
 - OpenAI / Azure OpenAI API
