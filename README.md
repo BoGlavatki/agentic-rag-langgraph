@@ -5,50 +5,50 @@ This branch is a hands-on learning project to deepen my expertise in building an
 This application uses agents and a scraper—"Scrape Any Data"—to extract data from websites. Specifically, it is designed to find information about a person on LinkedIn and generate structured information about them.
 <img width="1050" height="988" alt="Screenshot 2025-08-14 at 00 00 32" src="https://github.com/user-attachments/assets/a73e94ca-8135-4b86-9c72-c24504a4b303" />
 
-# ReAct AgentExecutor – From Scratch
+## ReAct AgentExecutor – From Scratch
 
 This branch implements a **ReAct AgentExecutor** step by step with LangChain, including a complete understanding of the ReAct algorithm and modern best practices.
 
-## 📌 Goals
+### 📌 Goals
 - Build a ReAct agent from scratch
 - Understand the ReAct algorithm and its components
 - Implement and integrate custom tools
 - Use CallbackHandlers to control agent flow
 - Prepare for transition to modern tool calling
 
-## 📂 Contents
+### 📂 Contents
 
-### 1. Environment Setup & Algorithm Overview
+#### 1. Environment Setup & Algorithm Overview
 - Setting up the development environment
 - Overview of the ReAct algorithm and its core principles
 
-### 2. Defining Tools
+#### 2. Defining Tools
 - Creating custom tools for the agent
 - Interfaces for tool integration
 
-### 3. Debugging
+#### 3. Debugging
 - Solving common errors:
     - Stop token issues
     - Template indentation issues
 
-### 4. ReAct Prompt & Reasoning Engine
+#### 4. ReAct Prompt & Reasoning Engine
 - Creating the ReAct prompt
 - Implementing the LLM reasoning engine
 - Output parsing & tool execution
 
-### 5. Agent Core Components
+#### 5. Agent Core Components
 - `AgentAction`
 - `AgentFinish`
 - Agent loop
 
-### 6. CallbackHandlers
+#### 6. CallbackHandlers
 - Using them to control and finalize the agent loop
 
-### 7. Recap & LangSmith
+#### 7. Recap & LangSmith
 - Brief recap of the implementation
 - Monitoring and debugging with LangSmith
 
-## 🛠 Technologies
+### 🛠 Technologies
 - Python 3.x
 - [LangChain](https://python.langchain.com/)
 - OpenAI / Azure OpenAI API
