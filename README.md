@@ -53,3 +53,33 @@ This branch implements a **ReAct AgentExecutor** step by step with LangChain, in
 - [LangChain](https://python.langchain.com/)
 - OpenAI / Azure OpenAI API
 - LangSmith
+
+# Agentic Tool-Routing Mini Project (LangChain + Azure OpenAI)
+
+This small project demonstrates how to build a **tool-calling agent** that routes user requests to the right specialist:
+1) a **Python Agent** that **writes & executes Python code** via a REPL, and  
+2) a **CSV Agent** that answers questions about a local CSV file (`episode_info.csv`) using pandas.
+
+It uses **LangChain’s tool calling**, a prompt from the **LangChain Hub**, and **Azure OpenAI** as the LLM backend.
+
+---
+
+## How it works
+
+- We pull the `react-agent-template` from the LangChain Hub and partially fill it with tool names and instructions.
+- Two tools are exposed to the LLM:
+  - **Python_Agent** → turns natural-language tasks into Python code and runs it in a REPL.  
+    > Example task: generate 15 QR codes into a `qrcodes/` folder.
+  - **CSV_Agent** → answers questions about `episode_info.csv` (e.g., counts, filtering) by running pandas ops.
+- A **router agent** (LLM) decides which tool to call for a given input and returns the final result.
+
+### Flow (Mermaid)
+```mermaid
+flowchart TD
+    U([User Query]) --> R([Router Agent])
+    R -- "Tool Call" --> P[Python_Agent]
+    R -- "Tool Call" --> C[CSV_Agent]
+    P --> O1[Result]
+    C --> O2[Result]
+    O1 --> A[Final Answer]
+    O2 --> A
