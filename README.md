@@ -54,28 +54,30 @@ This branch implements a **ReAct AgentExecutor** step by step with LangChain, in
 - OpenAI / Azure OpenAI API
 - LangSmith
 ### Flow (Mermaid)
+
 flowchart TD
     Q([? Query]) --> A([Agent])
 
     subgraph Pipeline
-    direction LR
-        A -- "LLM Call" --> T([Thought])
-        T -- "Parsing" --> TL([Tool])
-        TL -- "Tool Execution" --> O([Output])
+      direction LR
+      A -- "LLM Call" --> T([Thought])
+      T -- "Parsing" --> TL([Tool])
+      TL -- "Tool Execution" --> O([Output])
     end
 
     O -- "OK" --> AN([Answer])
     O -- "Not OK" --> A
 
-    %% optionales Styling (nah am Look & Feel)
+    %% optional styling
     style A fill:#F9FAFF,stroke:#F2B90B,stroke-width:2px,rx:10,ry:10
     style O fill:#F0FFFA,stroke:#0AA,stroke-width:1.5px,rx:8,ry:8
     style AN fill:#F7F7F7,stroke:#0A0,stroke-width:1.5px,rx:14,ry:14
 
-    %% rote Labels für die drei Kern-Kanten
+    %% linkStyle indices: 0=Q->A, 1=A->T, 2=T->TL, 3=TL->O, 4=O->AN, 5=O->A
+    linkStyle 1 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
     linkStyle 2 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
     linkStyle 3 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
-    linkStyle 4 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
+
 
 
 # Agentic Tool-Routing Mini Project (LangChain + Azure OpenAI)
