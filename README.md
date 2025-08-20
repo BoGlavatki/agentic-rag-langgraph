@@ -54,7 +54,7 @@ This branch implements a **ReAct AgentExecutor** step by step with LangChain, in
 - OpenAI / Azure OpenAI API
 - LangSmith
 ### Flow (Mermaid)
-
+```mermaid
 flowchart TD
     Q([? Query]) --> A([Agent])
 
