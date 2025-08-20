@@ -77,7 +77,7 @@ flowchart TD
     linkStyle 1 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
     linkStyle 2 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
     linkStyle 3 stroke:#E74C3C,stroke-width:1.5px,color:#E74C3C
-
+```
 
 
 # Agentic Tool-Routing Mini Project (LangChain + Azure OpenAI)
