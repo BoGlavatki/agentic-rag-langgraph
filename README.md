@@ -109,3 +109,43 @@ flowchart TD
     C --> O2[Result]
     O1 --> A[Final Answer]
     O2 --> A
+```
+
+
+# Reflexion Agent
+
+This repository demonstrates the step-by-step development of a **Reflexion Agent** using LangChain and LangGraph.  
+It follows the progression of the lecture series, with each stage introducing new components and concepts in agent design.
+
+---
+
+## 📌 Development Timeline
+
+### 🏗️ Project Setup
+- Added initial project structure  
+- Configured foundation files:  
+  - `.gitignore`  
+  - `main.py`  
+  - `pyproject.toml`  
+  - `poetry.lock`  
+
+### 🎭 Actor Agent
+- Implemented the first component of the architecture: the **Actor**  
+- Created `chains.py` with prompt templates for generating detailed answers  
+- Added `schemas.py` with **Pydantic models** for structured data handling  
+
+### 🪞 Revisor Agent (Self-Reflection)
+- Implemented the **Revisor** component for answer revision and critique  
+- Added `ReviseAnswer` model to `schemas.py` for improved response structure  
+- Updated chain prompts to incorporate critique and citation requirements  
+
+### 🛠️ ToolNode & Tool Execution
+- Integrated **search functionality** for more accurate responses  
+- Added required dependencies for tool execution within the graph  
+
+### 🔗 LangGraph Workflow
+- Built the complete **message graph** connecting **Actor** and **Revisor**  
+- Defined graph nodes for drafting, tool execution, and revision  
+- Established **state management** and conditional edge routing to enable reflection  
+
+---
