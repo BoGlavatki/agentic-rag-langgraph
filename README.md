@@ -150,7 +150,7 @@ It follows the progression of the lecture series, with each stage introducing ne
 
 ---
 ## 📊 Architecture Overview
-```
+```mermaid
 flowchart TD
     A[User Question] --> B[Actor Agent]
     B -->|Draft Answer| C[Tool Node]
