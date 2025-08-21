@@ -149,3 +149,20 @@ It follows the progression of the lecture series, with each stage introducing ne
 - Established **state management** and conditional edge routing to enable reflection  
 
 ---
+## 📊 Architecture Overview
+```
+flowchart TD
+    A[User Question] --> B[Actor Agent]
+    B -->|Draft Answer| C[Tool Node]
+    C -->|Execute Tools / Search| D[Actor Answer]
+    D --> E[Revisor Agent]
+    E -->|Critique + Revise| F[Final Answer]
+
+    style A fill:#F9FAFF,stroke:#333,stroke-width:1px
+    style B fill:#E0F7FA,stroke:#0288D1,stroke-width:2px
+    style C fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px
+    style D fill:#F1F8E9,stroke:#388E3C,stroke-width:2px
+    style E fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px
+    style F fill:#F7F7F7,stroke:#2E7D32,stroke-width:2px
+
+    ```
