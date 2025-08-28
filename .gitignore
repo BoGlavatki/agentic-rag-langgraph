@@ -6,6 +6,7 @@
 .langgraph_api/
 .venv/
 
+.env
 
 # Python-Bytecode
 __pycache__/
