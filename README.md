@@ -178,8 +178,8 @@ The section demonstrates the progressive construction of an agent that retrieves
 flowchart TD
     A[User Query] --> B[GraphState]
     B --> C[Retrieve Node]
-    C --> D[Relevance Filter\n(Structured Output)]
-    D --> E[External Tools\n(Web Search, APIs)]
+    C --> D[Relevance Filter(Structured Output)]
+    D --> E[External Tools(Web Search, APIs)]
     E --> F[LLM Generation Node]
     F --> G[Final Answer]
 
