@@ -168,7 +168,7 @@ flowchart TD
     ```
 
 
-    ## 📖 Agentic RAG
+## 📖 Agentic RAG
 
 This module implements an **Agentic RAG pipeline** using LangGraph.  
 The section demonstrates the progressive construction of an agent that retrieves, filters, and augments context before generating final answers.
