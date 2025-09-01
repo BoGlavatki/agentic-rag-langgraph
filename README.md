@@ -174,13 +174,12 @@ This module implements an **Agentic RAG pipeline** using LangGraph.
 The section demonstrates the progressive construction of an agent that retrieves, filters, and augments context before generating final answers.
 
 ### Architecture Overview
-
 ```mermaid
 flowchart TD
     A[User Query] --> B[GraphState]
     B --> C[Retrieve Node]
-    C --> D[Relevance Filter<br>(Structured Output)]
-    D --> E[External Tools<br>(Web Search, APIs)]
+    C --> D[Relevance Filter\n(Structured Output)]
+    D --> E[External Tools\n(Web Search, APIs)]
     E --> F[LLM Generation Node]
     F --> G[Final Answer]
 
@@ -191,3 +190,5 @@ flowchart TD
     style E fill:#F1F8E9,stroke:#388E3C,stroke-width:2px
     style F fill:#FFEBEE,stroke:#C62828,stroke-width:2px
     style G fill:#F7F7F7,stroke:#2E7D32,stroke-width:2px
+
+```
