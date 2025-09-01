@@ -166,3 +166,41 @@ flowchart TD
     style F fill:#F7F7F7,stroke:#2E7D32,stroke-width:2px
 
     ```
+
+
+    ## 📖 Agentic RAG
+
+This module implements an **Agentic RAG pipeline** using LangGraph.  
+The section demonstrates the progressive construction of an agent that retrieves, filters, and augments context before generating final answers.
+
+### Development Timeline
+- **Architecture & Corrective RAG Flow** – Base design of the agentic RAG system  
+- **Project Setup & Structure** – Boilerplate with LangGraph integration  
+- **Vectorstore Ingestion** – WebLoader + ChromaDB pipeline for document storage  
+- **GraphState** – State management of query, retrieved docs, and metadata  
+- **Retrieve Node** – Context fetching from the vector database  
+- **Relevance Filter** – Structured Output to select the most relevant chunks  
+- **External Tools** – Web search node (Tavily API) for extended context  
+- **LLM Generation Node** – Chain to produce the draft answer  
+- **Full LangGraph Agent** – Complete workflow with actor, retrieval, filtering, and generation  
+- **Self-RAG** – Extension with self-corrective reflection  
+
+### Architecture Overview
+
+```mermaid
+flowchart TD
+    A[User Query] --> B[GraphState]
+    B --> C[Retrieve Node]
+    C --> D[Relevance Filter<br>(Structured Output)]
+    D --> E[External Tools<br>(Web Search, APIs)]
+    E --> F[LLM Generation Node]
+    F --> G[Final Answer]
+
+    style A fill:#F9FAFF,stroke:#333,stroke-width:1px
+    style B fill:#E0F7FA,stroke:#0288D1,stroke-width:2px
+    style C fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px
+    style D fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px
+    style E fill:#F1F8E9,stroke:#388E3C,stroke-width:2px
+    style F fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+    style G fill:#F7F7F7,stroke:#2E7D32,stroke-width:2px
+```
